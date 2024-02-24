@@ -2,7 +2,9 @@
 <html lang="en-US">
     <head> <h2> This is the Online Examination In Overview</h2>
         <style>
-body {background-color: powderblue;}
+body {
+    background-color: powderblue;
+}
 h2{
     background-color: rgb(157, 165, 42);
     color: black;
@@ -43,15 +45,99 @@ h3  {
       margin: 50px;
       padding: 10px; 
 }
+
+               .Signin-button{
+    background-color: blue;
+    color:black;
+    border: none;
+    border-style: outset;
+    height: 36px;
+    width: 100px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
+    }
+    .Signin-button:hover{
+        background-color: green;
+    }
+    .SignUp-button{
+        background-color: red;
+        color:black;
+        border:none;
+        border-style: outset;
+        height: 36px;
+        width: 70px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: left;
+        margin-right: 10px;
+        font-weight: bold;
+        box-shadow:5px 5px 10px rgba(41, 24, 24, 0.5) ;
+    }
+
+    .SignUp-button:hover{
+        background-color: white;
+    }
+    .AccessasGuest-button{
+        background-color: aqua;
+        color: black;
+        border: none;
+        border-style:ridge;
+        height: 36px;
+        width: 200px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-right: 8px;
+        box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
+        }
+        
+    .Helps-button{
+        background-color: bisque;
+        color: black;
+        border-style: inset;
+        border-radius:10px;
+        height: 36px;
+        width: 70px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size:medium;
+        box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
+        }
+        .Helps-button:hover{
+            background-color: rgb(114, 84, 79);
+        }
+            
 </style>
 </head>
         <title> Online Examination</title>
+    
+    
+    
         <body style="background-color:pink;">
 <img scr= "listening.jpg" width="500" heigth="600">
        <!--     <h1 style="text-align:center;"> Darius</h1>
             <h2 style="text-align:center;"> Darius</h2>
             <h3 style="text-align:center;"> Darius</h3>
         -->
+
+            <button class="Signin-button">
+    Sign in
+</button>
+<button class="SignUp-button">
+    Sign Up
+</button>
+<button class="AccessasGuest-button">
+    Access as Guest
+</button>
+<button class="Helps-button">
+    Helps
+    </button>
+
+            
             <hr><h1>Following PHP CodeIgniter project contains all the essential features which 
     can be in use for the final-year IT students for their college projects.
      It has a number of features that will allow users to manage and attend online examinations.
