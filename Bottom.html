@@ -1,132 +1,168 @@
-
+<!DOCTYPE html>
+<html>
 <head>
-<style>
-.body{
-    background-image: url("online.png");
-}
-.Signin-button{
- background-color: blue;
- color:black;
- border: none;
- border-style: outset;
- height: 36px;
- width: 100px;
- border-radius: 4px;
- cursor: pointer;
- margin-right: 10px;
- margin-left: 550px;
- font-weight: bold;
- box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
- }
- .Signin-button:hover{
-     background-color: green;
- }
- .SignUp-button{
-     background-color: red;
-     color:black;
-     border:none;
-     border-style: outset;
-     height: 36px;
-     width: 70px;
-     border-radius: 4px;
-     cursor: pointer;
-     text-align: left;
-     margin-right: 10px;
-     margin-left: 550px;
-     font-weight: bold;
-     box-shadow:5px 5px 10px rgba(41, 24, 24, 0.5) ;
- }
+    <style>
+        body {
 
- .SignUp-button:hover{
-     background-color: white;
- }
-     
- .Helps-button{
-     background-color: bisque;
-     color: black;
-     border-style: inset;
-     border-radius:10px;
-     height: 36px;
-     width: 70px;
-     margin-left: 550px;
-     border-radius: 2px;
-     cursor: pointer;
-     font-weight: bold;
-     font-size:medium;
-     box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
-     }
-     .Helps-button:hover{
-         background-color: rgb(114, 84, 79);
-     }
+            background-image: url("Quiz.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-     .Guest-button{
-     background-color: white;
-     color: black;
-     border: none;
-     border-style: none;
-     height: 36px;
-     width: 150px;
-     border-radius: 6px;
-     cursor: pointer;
-     font-weight: bold;
-     font-size: 15px;
-     margin-right: 8px;
-     margin-left: 550px;
-     box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
-    }
-     .Guest-button:hover{
-        text-decoration: underline;
-     }
+        .Signin-button {
+            background-color: blue;
+            color: black;
+            border: none;
+            border-style: outset;
+            height: 36px;
+            width: 100px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-left: 15px;
+            font-weight: bold;
+            box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
+        }
 
-    .discription-text{
-     background-color: white;
-     color: rgb(226, 32, 32);
-     font-family: Arial;
-     font-size: larger;
-     text-align: center;
-    }
-    .span-text{
-        background-color: white;
-        color: blue;
-        text-shadow:5px 5px 10px rgba(41, 24, 24, 0.5);
-        cursor: pointer;
-    }
-    .span-text:hover{
-      text-decoration: underline;
-    } 
-    .span-Signin{
-        background-color: white;
-        color: blue;
-        text-shadow:5px 5px 10px rgba(41, 24, 24, 0.5);
-        cursor: pointer;
-        text-decoration: underline;
-    } 
-    .span-Signin:hover{
-     background-color: green;
-       
-    }
-     </style>
-      </head>
-    
-    <button class="Signin-button">
-     Sign in 
-    </button><br><br>
+        .Signin-button:hover {
+            background-color: green;
+        }
 
-<button class="SignUp-button">
-     Sign Up 
-    </button><br><br>
+        .SignUp-button {
+            background-color: red;
+            color: black;
+            border: none;
+            border-style: outset;
+            height: 36px;
+            width: 70px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: left;
+            margin-right: 10px;
+            margin-left: 15px;
+            font-weight: bold;
+            box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
+        }
 
-    <button class="Helps-button">
-         Helps 
+        .SignUp-button:hover {
+            background-color: white;
+        }
+
+        .Helps-button {
+            background-color: bisque;
+            color: black;
+            border-style: inset;
+            border-radius: 10px;
+            height: 36px;
+            width: 70px;
+            margin-left: 15px;
+            border-radius: 2px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: medium;
+            box-shadow: 5px 5px 10px rgba(41, 24, 24, 0.5);
+        }
+
+        .Helps-button:hover {
+            background-color: rgb(114, 84, 79);
+        }
+
+        .Guest-button {
+            background-color: white;
+            color: black;
+            border: none;
+            border-style: none;
+            height: 36px;
+            width: 150px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            margin-right: 8px;
+            margin-left: 8px;
+            margin-bottom: 2px;
+            margin-top: 22px;
+            box-shadow: 5px 5px 10px rgba(2, 0, 8, 0.918);
+        }
+
+        .Guest-button:hover {
+            text-decoration: underline;
+        }
+
+        .text {
+            background-color: rgb(80, 50, 50);
+            color: black;
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 20px;
+            height: 100px;
+            width: 1236px;
+            margin-left: 30px;
+        }
+
+        .span-text {
+            background-color: rgb(80, 50, 50);
+            color: blue;
+            text-shadow: 5px 5px 10px rgba(15, 1, 1, 0.932);
+            cursor: pointer;
+        }
+
+        .span-text:hover {
+            text-decoration: underline;
+        }
+
+        .span-Signin {
+            color: blue;
+            text-shadow: 5px 5px 10px rgba(48, 9, 9, 0.5);
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .span-Signin:hover {
+            background-color: green;
+
+
+        }
+    </style>
+    <title>
+        Online Examination
+    </title>
+    <link rel="icon" type="x-icon" href="online.png">
+</head>
+
+<body>
+    <div>
+        <button class="Signin-button">
+            Sign in
         </button><br><br>
-<button class="Guest-button">
-     Access as Guest 
-    </button><br><br><br><br>
 
-    <p>
-    <h1 class="description-text"> This page helps you to train for various computer tests.</h1>
-<span class="span-text">Learn more&gt;</span></p> If already you have an account click here.
-<span class="span-Signin">Sign in</span>
+        <button class="SignUp-button">
+            Sign Up
+        </button><br><br>
+
+        <button class="Helps-button">
+            Helps
+        </button><br><br>
 
 
+        <p class="text"> This page helps you to train for various computer tests.
+            <span class="span-text">Learn more&gt;</span><br> If already you have an account click here.
+            <span class="span-Signin">Sign in</span><br><br><br><br>
+        </p>
 
+        <button class="Guest-button">
+            Access as Guest
+        </button>
+
+    </div>
+</body>
+
+</html>
