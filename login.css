@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background: url("blue-sky.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    width: 420px;
+    height: 450px;
+    background:#c48c8c;
+    color: #fff;
+}
+.wrapper h1{
+    font-size: 38px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: solid;
+    text-align: center;
+    color: black;
+}
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    background: #c48c8c;
+    margin: 40px 0;
+}
+.input-box input {
+         width: 100%;
+         height: 100%;
+         background: transparent;
+         outline: none;
+         border-radius: 40px;
+         font-size: 16px;
+         padding: 20px;
+}
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content:space-between;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.remember-forgot a{
+    color: hwb(0 2% 81%);
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 50px;
+    background: green;
+    border-radius: 90px;
+    outline: none;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapper .btn:hover{
+    background: #ddc6c6;
+}
+
+
