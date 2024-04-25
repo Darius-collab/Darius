@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind:wght@300;400;500;600;700&family=Indie+Flower&family=Josefin+Sans:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="signup-validation.css">
+    <title>SIGN UP</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup-container">
+            <form action="signup">
+                <h1>SIGNUP</h1>
+                <label for="input" id="input">
+                    <div class="input-box">
+                        <input type="text" id="fullname" placeholder="Names&#42;" required>
+                    </div>
+                </label>
+                <label for="input" id="input">
+                    <div class="input-box">
+                        <input type="text" id="phone" placeholder="Phone number&#42;" required>
+                        <span>please Enter Phone number</span>
+                    </div>
+                </label>
+
+                <label for="input" id="input">
+
+                    <div class="input-box">
+                        <input type="email" id="Email" placeholder="Email&#42;" required>
+                        <span>please Enter Email</span>
+                    </div>
+                </label>
+
+
+                <label>
+                    <select id="country">
+                        <option value="country">Select your contry</option>
+                        <option value="rwanda">Rwanda</option>
+                        <option value="burundi">Burundi</option>
+                        <option value="tanzania">Tanzania</option>
+                        <option value="uganda">Uganda</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="congo">DRC</option>
+                        <option value="malawi">Malawi</option>
+                        <option value="mozambique">Mozambique</option>
+                    </select>
+                </label>
+
+            <!--    <table id="instructor">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Are you an instructor&#63; &nbsp;&nbsp</p>
+                        </td>
+                        <td>
+                            <input type="radio" name="instructor">Yes &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="instructor">No
+                        </td>
+                    </tr>
+                </table>-->
+
+                <div id="instructor">
+                <p>Are you an instructor&#63; &nbsp;&nbsp;</p>
+                <input type="radio" name="instructor">Yes &nbsp;&nbsp;
+                <input type="radio" name="instructor">No
+            </div>
+                <div class="button">
+                    <button id="btn">Signup</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
