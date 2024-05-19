@@ -1,0 +1,51 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.choice {
+    margin-bottom: 35px;
+}
+
+.choice button {
+    font-size: 100px;
+    min-width: 150px;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: calc(2s);
+    background: #2f66ff;
+    cursor: pointer;
+    border: none;
+}
+
+.choice button:hover {
+    background-color: rgb(55, 55, 100);
+}
+
+#playerDisplay,
+#computerDisplay {
+    font-size: 25px;
+}
+
+#resultDisplay {
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+.greenText,
+#humanScoreDisplay {
+    color: green;
+}
+
+.redText,
+#computerScoreDisplay {
+    color: red;
+}
